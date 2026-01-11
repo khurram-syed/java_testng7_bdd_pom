@@ -96,10 +96,11 @@ herokuapp-test-suite
 ```bash
 mvn clean test
 ```
-### Run with Specific Browser
+### Run with Specific Browser with Headless Option
 
 ```bash
 mvn clean test -Dbrowser=chrome
+mvn clean test -Dbrowser=chrome -Dheadless=true
 mvn clean test -Dbrowser=firefox
 mvn clean test -Dbrowser=edge
 mvn clean test -Dbrowser=safari
