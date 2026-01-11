@@ -35,7 +35,7 @@ jobs:
       # 3️⃣ Run tests
       - name: Run Cucumber TestNG tests
         run: |
-          mvn clean test -Dbrowser=chrome
+          mvn clean test -Dbrowser=chrome -Dheadless=true
 
       # 4️⃣ Upload Cucumber HTML report as artifact (ALWAYS)
       - name: Upload Cucumber HTML Report
